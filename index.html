@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab12</title>
+</head>
+<body>
+    <div id="students">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <h1>Список студентов</h1>
+        <p class="description">Простое приложение для составления списка студентов.</p>
+        <h2>Форма для ввода</h2>
+        <div class="form">
+            <form>
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname"></label>
+                <label for="name">Имя</label>
+                <input type="text" id="name">
+            </form>
+            <p>Количество знаков: {{ count }}</p>
+            <button type="button">Записать</button>
+        </div>
+        <h2>Список</h2>
+        <p>Список пуст, добавьте студентов</p>
+        <div>
+            <ul>
+                <li>{{ student }}<hr></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.5"></script>
+</html>
