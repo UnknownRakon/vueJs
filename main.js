@@ -11,14 +11,12 @@ const Students = {
     },
     methods: {
         surname(event) {
-            this.Surname=event.target.value
             this.count=this.Surname.length+this.Name.length
             if (this.Surname!='' && this.Name!='') {
                 this.filled=true
             }
         },
         name(event) {
-            this.Name=event.target.value
             this.count=this.Surname.length+this.Name.length
             if (this.Surname!='' && this.Name!='') {
                 this.filled=true

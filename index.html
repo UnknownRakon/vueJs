@@ -17,9 +17,9 @@
         <div class="form">
             <form>
                 <label for="surname">Фамилия</label>
-                <input type="text" id="surname" v-model="Surname" v-on:input="surname"></label>
+                <input type="text" id="surname" v-model.trim="Surname" v-on:input="surname"></label>
                 <label for="name">Имя</label>
-                <input type="text" id="name" v-model="Name" v-on:input="name">
+                <input type="text" id="name" v-model.trim="Name" v-on:input="name">
             </form>
             <p>Количество знаков: {{ count }}</p>
             <button type="button" v-on:click="newStudent" v-bind:class="{ active: filled}">Записать</button>
